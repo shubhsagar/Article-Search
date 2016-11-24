@@ -17,3 +17,10 @@ class Choice(models.Model):
 
     def __str__(self):
     	return self.choice_text
+
+class Article(models.Model):
+	Name = models.CharField(max_length=1000)
+	Link = models.CharField(max_length=1000)
+
+	def __str__(self):
+		return self.Name

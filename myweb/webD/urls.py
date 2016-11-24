@@ -7,7 +7,7 @@ urlpatterns = [
     # ex: /webD/
     url(r'^login\.html$', views.login, name='login'),
 
-    # ex: /webD/logout/
+    # ex: /webD/signup/
     url(r'^signup\.html$', views.signup, name='logout'),
 
     # ex: /webD/home/
