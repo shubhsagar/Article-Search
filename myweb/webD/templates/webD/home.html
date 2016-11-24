@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'webD/style.css' %}">
+    </head>
+    <body>
+        {% load static %}
+        <img src="{% static "webD/slimage.png" %}" format="PNG"  alt="logo" style="width:100px;height:100px;margin-left:13px;"/>
+        <div id="header">
+            <h1 id="header_text">Central library</h1>
+            <h2 id="header_text2">Indian Institute of Technology Delhi</h2>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+        <div id="mySidenavText">
+			<a href="/webD/home.html" style="color:0F5789;"><b>Home</b></a><br>
+			<a href="/webD/readlist.html"><b>Readlist</b></a><br>
+			<a href="/webD/history.html"><b>History</b></a><br>
+			<a href=""><b>All Articles</b></a><br>
+			<a href="/webD/logout.html"><b>Logout</b></a>
+        </div>
+        </div>
+			
+        <div id = "center" class="center">
+            <div id="title"><b>{{username}}</b></div>
+        	<form action="" method="post">
+        		<input type="search" id="mySearch" placeholder="Search your articles here...">
+        		<input type="submit" value="Search">
+        	</form>
+        	<div>
+        		<input type="text" id="mySuggestions" value="Suggestions for you...">
+        	</div>
+        </div>
+     </body>
+</html>
